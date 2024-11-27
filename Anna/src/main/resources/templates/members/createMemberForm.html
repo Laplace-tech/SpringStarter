@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<body>
+
+	<div class="container">
+		<form action="/members/new" method="post" th:object="${memberForm}">
+
+			<div class="form-group">
+				<label for="name">name</label>
+				<input type="text" id="name" name="name" th:field="*{name}" placeholder="set into name">
+			</div>
+
+			<button type="submit">register</button>
+
+		</form>
+	</div> <!--container-->
+
+</body>
+</html>
